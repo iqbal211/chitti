@@ -21,7 +21,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '3.1'
+          dotnet-version: '9.x'
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -52,4 +52,4 @@ jobs:
           app-name: 'iqbal211'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_07AC9CA481BE42DDBADA1F43B527A639 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27825BF7AC04424480EE09062FEA157C }}
